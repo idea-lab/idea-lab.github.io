@@ -1,0 +1,32 @@
+body {
+  font-size:14pt;
+  font-family:Roboto, Arial, sans-serif;
+  margin:0px;
+}
+
+core-scroll-header-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  }
+
+html, body {
+  height: 100%;
+  }
+
+core-toolbar {
+  background-color:#0000ff;
+  
+  height:66%;
+}
+
+core-toolbar div{
+  height:50px;
+}
+
+.content{
+  height:5000px;
+  
+}
