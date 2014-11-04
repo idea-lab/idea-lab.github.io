@@ -14,10 +14,10 @@ core-scroll-header-panel {
 
 html, body {
   height: 100%;
-  }
+}
 
 core-toolbar {
-  background-color:#0000ff;
+  background-color:#3260b5;
   
   height:66%;
 }
@@ -26,7 +26,18 @@ core-toolbar div{
   height:50px;
 }
 
-.content{
-  height:5000px;
+core-toolbar div div{
+  width:50px;
+}
+
+.projectobj{
   
+  margin:10px;
+  padding-left:10px;
+  padding-right:10px;
+  /*
+  padding-top:5px;
+  padding-bottom:5px;
+  */
+  background-color:#FFFF66;
 }

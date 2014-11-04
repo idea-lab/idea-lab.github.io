@@ -1,0 +1,32 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="project-tile" noscript attributes="project">
+  <template>
+    <style>
+      div{
+        width:150px;
+        height:150px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 10px;
+        position: relative;
+      }
+      
+      label{
+        display:block;
+        text-align: center;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+      }
+    </style>
+    <div style="background-image:url('{{project.img}}')">
+      <label>
+        {{project.name}}
+      </label>
+    </div>
+    
+  </template>
+</polymer-element>

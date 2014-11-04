@@ -1,0 +1,16 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="project-tile.html">
+
+<polymer-element name="project-list" noscript attributes="projectData"><!--taken care by script-->
+  <template>
+    <style>
+      project-tile{
+        display:inline-block;
+        
+      }
+    </style>
+    <template repeat="{{item in projectData}}">
+      <project-tile project="{{item}}" ></project-tile>
+    </template>
+  </template>
+</polymer-element>
