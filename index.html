@@ -10,8 +10,15 @@
         </style>
     </head>
     <body>
-        <div>
-            <p><a href="https://docs.google.com/document/d/1kqaXOOzmP0WKO5A8tl5q9tzQEhZ4EyyzvEFdZlF2fZs/edit">Click here</a> for IdeaLab's public pad.</p>
+        <div class='delete'>
+            <p>You should really enable Javascript.
         </div>
+        <a href='https://docs.google.com/document/d/1kqaXOOzmP0WKO5A8tl5q9tzQEhZ4EyyzvEFdZlF2fZs/edit'>Click here</a> for IdeaLab's public pad.</p>
+        <script type='text/javascript'>
+            var Del = document.getElementsByClassName('delete');
+            for (i = 0; Del.length > 0; i++) {
+                Del[i].parentNode.removeChild(Del[i]);
+            }
+        </script>
     </body>
 </html>
