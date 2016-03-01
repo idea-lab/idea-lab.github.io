@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>IdeaLab</title>
-		<link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div>
-      <p><a href="https://docs.google.com/document/d/1kqaXOOzmP0WKO5A8tl5q9tzQEhZ4EyyzvEFdZlF2fZs/edit">Click here</a> for IdeaLab's public pad.</p>
-    </div>
-  </body>
+    <head>
+        <title>IdeaLab</title>
+        <style type='text/css'>
+            body {
+                font-size:14pt;
+                font-family:Roboto, Arial, sans-serif;
+                margin:0px;
+            }
+            
+            .banner {
+                height:800px;
+                width:100%;
+                margin:0px;
+                overflow:hidden;
+            }
+            
+            .hex {
+                background-image:url('img/bkg.png');
+                background-position:center;
+                z-index:0;
+            }
+            
+            .blue {
+                background-color:rgba(0, 73, 178, 1);
+                z-index:1;
+                -webkit-clip-path: polygon(62.5% 0%, 100% 0%, 100% 100%, 37.5% 100%);
+                clip-path: polygon(67.5% 0%, 100% 0%, 100% 100%, 37.5% 100%);
+                position:absolute;
+                top:0px;
+                left:0px;
+            }
+            
+            .logo-blk {
+                position:absolute;
+                top:400px; /* Top displacement, should not change regardless of size. */
+                left:50%; /* Also used for displacement and as a result should not change. */
+                transform:translate(-50%,-50%); /* Do not touch this either, used for centering. */
+                height:250px; /* Screw with this to change your logo size. */
+                width:100%;
+                background-image:url('img/logo-blk.png');
+                background-position:center;
+                background-size:contain;
+                background-repeat:no-repeat;
+                z-index:2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='delete'>
+            <p>You should really enable Javascript.
+        </div>
+        <div class='banner hex'>
+            <div class='logo-blk'></div>
+        </div>
+        <div class='banner blue'></div>
+        <a href='https://docs.google.com/document/d/1kqaXOOzmP0WKO5A8tl5q9tzQEhZ4EyyzvEFdZlF2fZs/edit'>Click here</a> for IdeaLab's public pad.</p>
+        <script type='text/javascript'>
+            var Del = document.getElementsByClassName('delete'); // Find the elements to be deleted and stick them in an array
+            for (i = 0; Del.length > 0; i++) { // For each element in the aforementioned array, iterate through
+                Del[i].parentNode.removeChild(Del[i]); // Delete that element by removing it from its parent Node.
+            }
+        </script>
+    </body>
 </html>
