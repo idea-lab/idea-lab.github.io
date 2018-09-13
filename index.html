@@ -1,66 +1,289 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>IdeaLab</title>
-        <style type='text/css'>
-            body {
-                font-size:14pt;
-                font-family:Roboto, Arial, sans-serif;
-                margin:0px;
-            }
-            
-            .banner {
-                height:800px;
-                width:100%;
-                margin:0px;
-                overflow:hidden;
-            }
-            
-            .hex {
-                background-image:url('img/bkg_old.png');
-                background-position:center;
-                z-index:0;
-            }
-            
-            .blue {
-                background-color:rgba(0, 73, 178, 1);
-                z-index:1;
-                -webkit-clip-path: polygon(62.5% 0%, 100% 0%, 100% 100%, 37.5% 100%);
-                clip-path: polygon(67.5% 0%, 100% 0%, 100% 100%, 37.5% 100%);
-                position:absolute;
-                top:0px;
-                left:0px;
-            }
-            
-            .logo-blk {
-                position:absolute;
-                top:400px; /* Top displacement, should not change regardless of size. */
-                left:50%; /* Also used for displacement and as a result should not change. */
-                transform:translate(-50%,-50%); /* Do not touch this either, used for centering. */
-                height:250px; /* Screw with this to change your logo size. */
-                width:100%;
-                background-image:url('img/logo-blk.png');
-                background-position:center;
-                background-size:contain;
-                background-repeat:no-repeat;
-                z-index:2;
-            }
-        </style>
-    </head>
-    <body>
-        <div class='delete'>
-            <p>You should really enable Javascript.
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>IdeaLab</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet">
+  <link href="color/default.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="load"></div>
+  </div>
+
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+        <a class="navbar-brand" href="index.html">
+          <h1>IDEALAB</h1>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#service">About the Club</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href='#'>Reference</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blogs <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">CST</a></li>
+              <li><a href="#">CPT</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- Section: intro -->
+  <section id="intro" class="intro">
+    <div class='banner blue'></div>
+    <div id = 'idealabLogo' class="slogan">
+    </div>
+
+    <div class="page-scroll">
+      <a href="#service" class="btn btn-circle">
+				<i class="fa fa-angle-double-down animated"></i>
+			</a>
+    </div>
+  </section>
+  <!-- /Section: intro -->
+
+  <!-- Section: about -->
+  <section id="about" class="home-section text-center">
+    <div class="heading-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow bounceInDown" data-wow-delay="0.4s">
+              <div class="section-heading">
+                <h2>About us</h2>
+                <i class="fa fa-2x fa-angle-down"></i>
+
+              </div>
+            </div>
+          </div>
         </div>
-        <div class='banner hex'>
-            <div class='logo-blk'></div>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-5">
+          <hr class="marginbot-50">
         </div>
-        <div class='banner blue'></div>
-        <a href='https://docs.google.com/document/d/1kqaXOOzmP0WKO5A8tl5q9tzQEhZ4EyyzvEFdZlF2fZs/edit'>Click here</a> for IdeaLab's public pad.</p>
-        <script type='text/javascript'>
-            var Del = document.getElementsByClassName('delete'); // Find the elements to be deleted and stick them in an array
-            for (i = 0; Del.length > 0; i++) { // For each element in the aforementioned array, iterate through
-                Del[i].parentNode.removeChild(Del[i]); // Delete that element by removing it from its parent Node.
-            }
-        </script>
-    </body>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="wow bounceInUp" data-wow-delay="0.2s">
+            <div class="team boxed-grey">
+              <div class="inner">
+                <h5>Infant Derrick Gnanasusairaj</h5>
+                <p class="subtitle">CST Leader</p>
+                <p class='subtitle'>Github: <a href='https://github.com/InfantDerrick' target='_blank'>InfantDerrick</a></p>
+                <div class="avatar"><img src="img/team/1.jpg" alt="" class="img-responsive img-circle" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wow bounceInUp" data-wow-delay="0.5s">
+            <div class="team boxed-grey">
+              <div class="inner">
+                <h5>Igor Barniov</h5>
+                <p class="subtitle">CST Leader</p>
+                <div class="avatar"><img src="img/team/2.jpg" alt="" class="img-responsive img-circle" /></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wow bounceInUp" data-wow-delay="0.8s">
+            <div class="team boxed-grey">
+              <div class="inner">
+                <h5>Sanjit Bhat</h5>
+                <p class="subtitle">CPT Leader</p>
+                <p class='subtitle'>Github: <a href='https://github.com/sanjit-bhat' target='_blank'>sanjit-bhat</a></p>
+                <div class="avatar"><img src="img/team/3.jpg" alt="" class="img-responsive img-circle" /></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wow bounceInUp" data-wow-delay="1s">
+            <div class="team boxed-grey">
+              <div class="inner">
+                <h5>Alex Sun</h5>
+                <p class="subtitle">CPT Leader</p>
+                <div class="avatar"><img src="img/team/4.jpg" alt="" class="img-responsive img-circle" /></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Section: about -->
+
+
+  <!-- Section: services -->
+  <section id="service" class="home-section text-center bg-gray">
+
+    <div class="heading-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow bounceInDown" data-wow-delay="0.4s">
+              <div class="section-heading">
+                <h2>About Our Club</h2>
+                <i class="fa fa-2x fa-angle-down"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-5">
+          <hr class="marginbot-50">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="service-box">
+              <div class="service-icon">
+                <img src="img/icons/service-icon-1.png" alt="" />
+              </div>
+              <div class="service-desc">
+                <h5>Basics of CS</h5>
+                <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-box">
+              <div class="service-icon">
+                <img src="img/icons/service-icon-2.png" alt="" />
+              </div>
+              <div class="service-desc">
+                <h5>Web and App Dev</h5>
+                <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-box">
+              <div class="service-icon">
+                <img src="img/icons/service-icon-3.png" alt="" />
+              </div>
+              <div class="service-desc">
+                <h5>Computer Science Competition</h5>
+                <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wow fadeInRight" data-wow-delay="0.2s">
+            <div class="service-box">
+              <div class="service-icon">
+                <img src="img/icons/service-icon-4.png" alt="" />
+              </div>
+              <div class="service-desc">
+                <h5>Hack-a-thon</h5>
+                <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Section: services -->
+
+
+
+
+  <!-- Section: contact -->
+  <section id="contact" class="home-section text-center">
+    <div class="heading-contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow bounceInDown" data-wow-delay="0.4s">
+              <div class="section-heading">
+                <h2>Get in touch</h2>
+                <i class="fa fa-2x fa-angle-down"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Section: contact -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="wow shake" data-wow-delay="0.4s">
+            <div class="page-scroll marginbot-30">
+              <a href="#intro" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up animated"></i>
+						</a>
+            </div>
+          </div>
+          <div class="credits">
+            Designed by IdeaLab Dev Team
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Files -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
 </html>
